@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1722991269886,
+      "tag": "0000_natural_doorman",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1723064287801,
+      "tag": "0001_loving_victor_mancha",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1723065706394,
+      "tag": "0002_special_otto_octavius",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1723065964599,
+      "tag": "0003_petite_vision",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1723081997270,
+      "tag": "0004_absurd_santa_claus",
+      "breakpoints": true
+    }
+  ]
+}
