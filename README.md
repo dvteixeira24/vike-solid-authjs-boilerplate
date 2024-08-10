@@ -19,6 +19,8 @@ yarn dlx @batijs/cli --solid --tailwindcss --authjs --telefunc --drizzle --biome
 
 ## *Drizzle*
 
+It's set up to use Postgres...
+
 ### Database operations
 
 ```sh
