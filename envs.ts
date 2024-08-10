@@ -12,14 +12,12 @@ type T_envs = {
     NODE_ENV?: string;
 
     POSTGRES_URL: string;
-
-    TRUST_PROXY?: string;
     AUTHJS_SECRET: string;
-    AUTH_TRUST_HOST?: string;
-    SALT: string;
 
-    PORT: string; //
-    HOST?: string;
+    AUTH_TRUST_HOST?: string; //
+
+    PORT?: string; // default 3000
+    HOST?: string; // default 0.0.0.0
 
     // DEV
     HMR_PORT?: string; //
@@ -30,7 +28,6 @@ function hasRequiredEnvs(o: Record<string, string | undefined>): o is T_envs {
     let out = true;
     if (!o.POSTGRES_URL) out = false;
     if (!o.AUTHJS_SECRET) out = false;
-    if (!o.SALT) out = false;
     return out;
 }
 

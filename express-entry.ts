@@ -10,6 +10,7 @@ import { authjsHandler, authjsSessionMiddleware, getSession } from "./server/aut
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const root = __dirname;
+const host = envs.HOST || "0.0.0.0";
 const port = envs.PORT ? Number.parseInt(envs.PORT, 10) : 3000;
 const hmrPort = envs.HMR_PORT ? Number.parseInt(envs.HMR_PORT, 10) : 24678;
 
@@ -51,8 +52,8 @@ async function startServer() {
      **/
     app.all("*", createHandler(vikeHandler));
 
-    app.listen(port, () => {
-        console.log(`Server listening on http://localhost:${port}`);
+    app.listen(port, host, () => {
+        console.log(`Server listening on http://${host}:${port}`);
     });
 
     return app;
